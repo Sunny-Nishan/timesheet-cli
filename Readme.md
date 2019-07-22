@@ -1,7 +1,6 @@
 # timesheet-cli
 
-Overview
----
+## Development
 
 ```
 yarn
@@ -24,7 +23,24 @@ yarn start
 }
 ```
 
-Todo
----
-* Provide a functionality to export to CSV.
-* Installable CLI
+## Using CLI
+
+```
+yarn link
+timesheet
+✔ Enter what you've worked on - Fixed Bug#1353
+✔ Enter time spent - 2 hours
+✔ Do you want to add more tasks? - No / Yes
+```
+
+## To open timesheet.json
+
+```
+timesheet show
+
+```
+
+## Todo
+
+- Provide a functionality to export to CSV.
+- Installable CLI using npm.

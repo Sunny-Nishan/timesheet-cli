@@ -26,12 +26,15 @@ const writeToTimesheet = tasks => {
   timesheetObj[todaysDate] = timesheetObj[todaysDate].concat(tasks);
   timesheetObj.order = Array.from(dateOrders);
 
-  fs.writeFile(TIMESHEET_PATH, JSON.stringify(timesheetObj), function(err) {
+  fs.writeFile(TIMESHEET_PATH, JSON.stringify(timesheetObj, null, 2), function(
+    err
+  ) {
     if (err) throw err;
     console.log("Saved!");
   });
 };
 
 module.exports = {
-  writeToTimesheet
+  writeToTimesheet,
+  TIMESHEET_PATH
 };

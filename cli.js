@@ -1,6 +1,7 @@
 #! /usr/bin/env node
 const prompts = require("prompts");
-const { writeToTimesheet } = require("./utils");
+const opn = require("opn");
+const { writeToTimesheet, TIMESHEET_PATH } = require("./utils");
 
 let tasks = [];
 let count = 0;
@@ -77,4 +78,13 @@ const wantToAddMore = () => {
     }
   );
 };
-addTasks();
+
+const main = () => {
+  const args = process.argv.slice(2);
+  if (args[0] === "show") {
+    opn(TIMESHEET_PATH);
+  } else {
+    addTasks();
+  }
+};
+main();
