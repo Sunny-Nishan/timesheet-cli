@@ -42,5 +42,5 @@ timesheet show
 
 ## Todo
 
-- Provide a functionality to export to CSV.
-- Installable CLI using npm.
+- Provide a functionality to export to CSV
+- Installable CLI using npm
