@@ -44,3 +44,4 @@ timesheet show
 
 - Provide a functionality to export to CSV.
 - Installable CLI using npm.
+- Command to bind to automatic post push git hook so i never forget to fill a task.
