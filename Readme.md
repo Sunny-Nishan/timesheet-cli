@@ -13,7 +13,7 @@ yarn start
 ```
 
 ```
-Output json will be stored in a file named timesheet.json
+Output json will be stored in a file named ./timesheet.json
 {
   "7/22/2019": [
     { "task": "Fixed Bug#1353", "timeSpent": "2 hours" },
