@@ -1,6 +1,7 @@
 const fs = require("fs");
 let timesheetObj = {};
-const TIMESHEET_PATH = "./timesheet.json";
+
+const TIMESHEET_PATH = __dirname + "/timesheet.json";
 
 try {
   timesheetObj = require(TIMESHEET_PATH);
